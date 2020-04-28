@@ -4,11 +4,22 @@ In the "Would You Rather?" Project, I'll build a web app that lets a user play t
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Clone the repository, change directories, and use NPM to install the dependencies.
 
-### `yarn start`
+```bash
+$ git clone https://github.com/YousefKJM/Would-You-Rather-React-App.git
+$ cd Would-You-Rather-React-App
+$ npm install
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
+
+The project can be run with
+
+- `yarn start`
+
+The project can be viewed in the browser at
+
+- [http://localhost:3000](http://localhost:3000)
