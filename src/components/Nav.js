@@ -25,8 +25,8 @@ class Nav extends Component {
 			<Container className="containerStyle">
 				<Responsive as={Menu} minWidth={651} pointing secondary>
 					<Menu.Item name="home" as={NavLink} to="/" exact />
-					<Menu.Item name="new poll" as={NavLink} to="/add" />
-					<Menu.Item name="leader board" as={NavLink} to="/leaderboard" />
+					<Menu.Item name="new question" as={NavLink} to="/add" />
+					<Menu.Item name="leaderboard" as={NavLink} to="/leaderboard" />
 					<Menu.Menu position="right">
 						<Menu.Item>
 							<span>
@@ -38,7 +38,12 @@ class Nav extends Component {
 								/>
 								{users[authUser].name} */}
 								<Label as="a" image>
-									<img alt="" src={users[authUser].avatarURL} />
+									<Image
+										src={users[authUser].avatarURL}
+										avatar
+										spaced="right"
+										verticalAlign="bottom"
+									/>
 									{users[authUser].name}
 								</Label>
 							</span>
@@ -141,9 +146,9 @@ class Nav extends Component {
 							<Grid.Column>
 								<Menu pointing secondary widths={3}>
 									<Menu.Item name="home" as={NavLink} to="/" exact />
-									<Menu.Item name="new poll" as={NavLink} to="/add" />
+									<Menu.Item name="new question" as={NavLink} to="/add" />
 									<Menu.Item
-										name="leader board"
+										name="leaderboard"
 										as={NavLink}
 										to="/leaderboard"
 									/>
