@@ -29,13 +29,13 @@ export class Login extends Component {
 						image={<BrandImage />}
 						form={<ConnectedLoginForm onLoading={this.handleLoading} />}
 						loading={this.state.loading}
-					/>{" "}
-				</Segment.Group>{" "}
+					/>
+				</Segment.Group>
 				{/* <footer className="footer">
 					<a href="https://www.freepik.com/free-photos-vectors/design">
-						Avatar characters created by freepik - www.freepik.com{" "}
-					</a>{" "}
-				</footer>{" "} */}
+						Avatar characters created by freepik - www.freepik.com
+					</a>
+				</footer> */}
 			</Fragment>
 		);
 	}
@@ -43,8 +43,8 @@ export class Login extends Component {
 
 const LoginHeader = () => (
 	<Header as="h4" block attached="top" textAlign="center">
-		<Header.Content> Welcome to the Would You Rather App! </Header.Content>{" "}
-		<Header.Subheader> Please sign in to continue </Header.Subheader>{" "}
+		<Header.Content> Welcome to the Would You Rather App! </Header.Content>
+		<Header.Subheader> Please sign in to continue </Header.Subheader>
 	</Header>
 );
 
@@ -53,16 +53,15 @@ const LoginGridLayout = ({ image, form, loading }) => (
 		<Grid padded textAlign="center">
 			<Grid.Row className="login">
 				<Grid.Column width={16}>
-					{" "}
 					{loading === true && (
 						<Dimmer active inverted>
 							<Loader inverted content="Loading" />
 						</Dimmer>
-					)}{" "}
-					{image} <br /> {form}{" "}
-				</Grid.Column>{" "}
-			</Grid.Row>{" "}
-		</Grid>{" "}
+					)}
+					{image} <br /> {form}
+				</Grid.Column>
+			</Grid.Row>
+		</Grid>
 	</div>
 );
 
@@ -107,8 +106,8 @@ class LoginForm extends Component {
 		return (
 			<Form onSubmit={this.handleSubmit}>
 				<Header as="h2" color="green">
-					Sign In{" "}
-				</Header>{" "}
+					Sign In
+				</Header>
 				<Form.Dropdown
 					placeholder="Select a Friend"
 					fluid
