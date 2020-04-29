@@ -22,7 +22,7 @@ class Nav extends Component {
 		const { authUser, users } = this.props;
 
 		return (
-			<Container>
+			<Container className="containerStyle">
 				<Responsive as={Menu} minWidth={651} pointing secondary>
 					<Menu.Item name="home" as={NavLink} to="/" exact />
 					<Menu.Item name="new poll" as={NavLink} to="/add" />
