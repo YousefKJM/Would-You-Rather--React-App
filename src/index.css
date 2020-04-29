@@ -19,6 +19,23 @@ code {
     padding: 0 6px;
 }
 
+.ui.container.containerStyle {
+    width: 100%;
+}
+
+
+/* @media screen and (min-width: 651px) {
+    .ui.container.containerStyle {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ui.container.containerStyle {
+        width: auto !important;
+    }
+} */
+
 
 /* home page tab highlight */
 
