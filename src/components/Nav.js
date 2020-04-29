@@ -108,10 +108,22 @@ class Nav extends Component {
 						<Grid.Row>
 							<Grid.Column width={16}>
 								<Menu pointing secondary widths={3}>
-									<Menu.Item name="home" as={NavLink} to="/" exact />
-									<Menu.Item name="new poll" as={NavLink} to="/add" />
 									<Menu.Item
-										name="leader board"
+										icon="home"
+										name="home"
+										as={NavLink}
+										to="/"
+										exact
+									/>
+									<Menu.Item
+										icon="add circle"
+										name="new question"
+										as={NavLink}
+										to="/add"
+									/>
+									<Menu.Item
+										icon="winner"
+										name="leaderboard"
 										as={NavLink}
 										to="/leaderboard"
 									/>
@@ -155,9 +167,21 @@ class Nav extends Component {
 						<Grid.Row>
 							<Grid.Column>
 								<Menu pointing secondary widths={3}>
-									<Menu.Item name="home" as={NavLink} to="/" exact />
-									<Menu.Item name="new question" as={NavLink} to="/add" />
 									<Menu.Item
+										icon="home"
+										name="home"
+										as={NavLink}
+										to="/"
+										exact
+									/>
+									<Menu.Item
+										icon="add circle"
+										name="new question"
+										as={NavLink}
+										to="/add"
+									/>
+									<Menu.Item
+										icon="winner"
 										name="leaderboard"
 										as={NavLink}
 										to="/leaderboard"
