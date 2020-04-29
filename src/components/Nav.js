@@ -24,9 +24,19 @@ class Nav extends Component {
 		return (
 			<Container className="containerStyle">
 				<Responsive as={Menu} minWidth={651} pointing secondary>
-					<Menu.Item name="home" as={NavLink} to="/" exact />
-					<Menu.Item name="new question" as={NavLink} to="/add" />
-					<Menu.Item name="leaderboard" as={NavLink} to="/leaderboard" />
+					<Menu.Item icon="home" name="home" as={NavLink} to="/" exact />
+					<Menu.Item
+						icon="add circle"
+						name="new question"
+						as={NavLink}
+						to="/add"
+					/>
+					<Menu.Item
+						icon="winner"
+						name="leaderboard"
+						as={NavLink}
+						to="/leaderboard"
+					/>
 					<Menu.Menu position="right">
 						<Menu.Item>
 							<span>
