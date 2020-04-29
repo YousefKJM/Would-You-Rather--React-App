@@ -1,8 +1,20 @@
 let users = {
+    yousefkjm: {
+        id: 'yousefkjm',
+        name: 'Yousef Majeed',
+        avatarURL: '/images/avatars/yousef.JPEG',
+        answers: {
+            "8xf0y6ziyjabvozdd253nd": "optionOne",
+            "6ni6ok3ym7mf1p33lnez": "optionTwo",
+            "am8ehyc8byjqgar0jgpub9": "optionTwo",
+            "loxhs1bqm25b708cmbf3g": "optionOne"
+        },
+        questions: ["8xf0y6ziyjacvozdd253nd", "8xf0y6ziyjacaozdd253nd"]
+    },
     sarahedo: {
         id: 'sarahedo',
         name: 'Sarah Edo',
-        avatarURL: '/images/avatars/yousef.jpg',
+        avatarURL: '/images/avatars/sarah.jpg',
         answers: {
             "8xf0y6ziyjabvozdd253nd": 'optionOne',
             "6ni6ok3ym7mf1p33lnez": 'optionTwo',
@@ -14,7 +26,7 @@ let users = {
     tylermcginnis: {
         id: 'tylermcginnis',
         name: 'Tyler McGinnis',
-        avatarURL: '/images/avatars/tyler.png',
+        avatarURL: '/images/avatars/tyler.jpg',
         answers: {
             "vthrdm985a262al8qx3do": 'optionOne',
             "xj352vofupe1dqz9emx13r": 'optionTwo',
@@ -24,7 +36,7 @@ let users = {
     johndoe: {
         id: 'johndoe',
         name: 'John Doe',
-        avatarURL: '/images/avatars/dan.png',
+        avatarURL: '/images/avatars/dan.jpg',
         answers: {
             "xj352vofupe1dqz9emx13r": 'optionOne',
             "vthrdm985a262al8qx3do": 'optionTwo',
@@ -35,6 +47,32 @@ let users = {
 }
 
 let questions = {
+    "8xf0y6ziyjacvozdd253nd": {
+        id: "8xf0y6ziyjacvozdd253nd",
+        author: "yousefkjm",
+        timestamp: 1572599686000,
+        optionOne: {
+            votes: ["yousefkjm", "tylermcginnis"],
+            text: "be a React developer"
+        },
+        optionTwo: {
+            votes: ["sarahedo"],
+            text: "be an Angular developer"
+        }
+    },
+    "8xf0y6ziyjacaozdd253nd": {
+        id: "8xf0y6ziyjacaozdd253nd",
+        author: "yousefkjm",
+        timestamp: 1572598876000,
+        optionOne: {
+            votes: ["yousefkjm"],
+            text: "be a Python developer"
+        },
+        optionTwo: {
+            votes: ["sarahedo"],
+            text: "be an Java developer"
+        }
+    },
     "8xf0y6ziyjabvozdd253nd": {
         id: '8xf0y6ziyjabvozdd253nd',
         author: 'sarahedo',
