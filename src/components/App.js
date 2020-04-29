@@ -10,6 +10,7 @@ import UserCard from "./UserCard";
 import NewPoll from "./NewPoll";
 import Leaderboard from "./Leaderboard";
 import NoMatch from "./NoMatch";
+// import LoadingBar from "react-redux-loading";
 
 class App extends Component {
 	componentDidMount() {
@@ -31,6 +32,7 @@ class App extends Component {
 					) : (
 						<Fragment>
 							<Nav />
+
 							<ContentGrid>
 								<Switch>
 									<Route exact path="/" component={Home} />
